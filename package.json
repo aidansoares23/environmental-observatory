@@ -1,0 +1,21 @@
+{
+  "name": "environmental-observatory",
+  "version": "1.0.0",
+  "description": "Hello World",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidansoares23/environmental-observatory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/aidansoares23/environmental-observatory/issues"
+  },
+  "homepage": "https://github.com/aidansoares23/environmental-observatory#readme"
+}
