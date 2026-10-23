@@ -1,4 +1,4 @@
-# Environmental Observation
+# Environmental Observatory
 
 **Dataset links:**
 
