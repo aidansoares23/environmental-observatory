@@ -31,3 +31,38 @@ test("rejects wrong data type", () => {
   const result = parseObservationDate(null);
   assert.equal(result, null);
 });
+
+test("Accepts valid YYYY-MM-DD", () => {
+  const result = parseObservationDate("2026-01-03");
+  assert.equal(result, "2026-01-03");
+});
+
+test("Accepts valid YYYY-MM-D", () => {
+  const result = parseObservationDate("2026-01-3");
+  assert.equal(result, "2026-01-03");
+});
+
+test("Accepts valid YYYY-M-DD", () => {
+  const result = parseObservationDate("2026-1-13");
+  assert.equal(result, "2026-01-13");
+});
+
+test("Accepts valid YYYY-MM-DD leap year", () => {
+  const result = parseObservationDate("2024-02-29");
+  assert.equal(result, "2024-02-29");
+});
+
+test("Rejects invalid YYYY-M-DD leap year", () => {
+  const result = parseObservationDate("2025-2-29");
+  assert.equal(result, null);
+});
+
+test("Rejects invalid YYYY-M-DD", () => {
+  const result = parseObservationDate("2026-13-01");
+  assert.equal(result, null);
+});
+
+test("Rejects invalid YYYY-M-DD", () => {
+  const result = parseObservationDate("2026-00-10");
+  assert.equal(result, null);
+});
